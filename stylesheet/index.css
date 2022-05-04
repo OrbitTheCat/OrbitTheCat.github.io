@@ -231,6 +231,8 @@ body {
     stroke-dashoffset: 924;
     stroke-dasharray: 924;
     margin-top: -14rem;
+    height: 500px; 
+    width: 500px;
 }
 
 #quote2TextSVG.show {
@@ -268,7 +270,7 @@ body {
     }
 }
 
-.quote2TextTop .show {
+.quote2TextTop {
     color: var(--pure);
     font-family: 'Roboto', sans-serif;
     margin-left: 14rem;
@@ -359,7 +361,7 @@ body {
     
 }
 
-@media all and (max-width: 1320px) {
+@media all and (max-width: 1321px) {
     .aboutSVG {
         position: absolute;
         right: 5%;
@@ -376,7 +378,7 @@ body {
     }
 }
 
-@media all and (max-width: 1504px) {
+@media all and (max-width: 1506px) {
     .aboutSVG {
         position: absolute;
         right: 5%;
@@ -386,7 +388,7 @@ body {
     }
 }
 
-@media all and (max-width: 1120px) {
+@media all and (max-width: 1121px) {
     .aboutSVG {
         position: absolute;
         right: 5%;
@@ -403,7 +405,7 @@ body {
     }
 }
 
-@media all and (max-width: 1020px) {
+@media all and (max-width: 1021px) {
     .aboutSVG {
         position: absolute;
         right: 5%;
@@ -420,7 +422,7 @@ body {
     }
 }
 
-@media all and (max-width: 925px) {
+@media all and (max-width: 926px) {
     .aboutSVG {
         position: absolute;
         right: 5%;
@@ -434,5 +436,47 @@ body {
         width: 20rem;
         max-width: 65%;
         margin-left: 190px;
+    }
+}
+
+@media all and (max-width: 391px) {
+    .helloGreeting {
+        font-size: 35px;
+    }
+
+    .secHead {
+        margin-left: auto;
+    }
+
+    #quote2TextSVG {
+        height: 300px;
+        width: 300px;
+    }
+
+    #SVGtop1 {
+        font-size: 25px;
+        margin-top: -15.5rem;
+        margin-left: 7.75rem;
+    }
+
+    #SVGbottom1 {
+        font-size: 25px;
+        margin-top: 7rem;
+    }
+
+    .wrapQoute {
+        margin-top: 500px;
+    }
+
+    .aboutWrap {
+        margin-left: 5rem;
+    }
+
+    .aboutHead {
+        margin-left: 4.50rem;
+    }
+
+    .aboutSVG {
+        display: none;
     }
 }
