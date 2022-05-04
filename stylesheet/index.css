@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans:300i,400,700');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #181818;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom,#c22085 25%,#2d9687 0,#2d9687 50%,#e9b171 0,#e9b171 75%,#e2b8aa 0);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(58, 57, 57);
+  }
+
+body {
+    background-color: var(--dark);
+    overflow-x: hidden;
+}
+
+:root {
+    --primary: #a11616;
+    --dark: #141414;
+    --pure: #fff;
+    --smoke: whitesmoke;
+    --dark-gray: #999;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: white;
+}
+
+.helloGreeting {
+    color: var(--pure);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 20rem;
+}
+
+.red {
+    color: var(--primary);
+}
+
+.welcome {
+    min-height: 110vh;
+    color: white;
+    display: flex;
+}
+
+#quote1SVG {
+    stroke-dashoffset: 1040;
+    stroke-dasharray: 1040;
+    fill: none;
+    stroke: #e9b171;
+    stroke-width: 15;
+}
+
+.qouteText {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+}
+
+#quote1SVG.show {
+    opacity: 1;
+    stroke-dashoffset: 1040;
+    stroke-dasharray: 1040;
+    fill: none;
+    stroke: #e9b171;
+    stroke-width: 15;
+    animation: sign 3.5s;
+    animation-fill-mode: forwards;
+}
+
+.wrapQoute {
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes sign {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.quote1TextBottom {
+    color: var(--pure);
+    fill: var(--pure);
+    font-size: 65px;
+}
+
+.quote1 {
+    color: var(--pure);
+    margin-top: -17.75rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.quoteTextBG {
+    fill: var(--dark);
+}
+
+.quoteTextBG html {
+    background-color: var(--dark);
+}
+
+.wrap {
+    margin: 0 auto;
+    position: relative;
+    width: 1300px;
+    min-height: 100%;
+    max-width: 75%;
+    box-sizing: border-box;
+}
+
+.secHead {
+    font-family: 'Roboto', sans-serif;
+    color: #c22085;
+    margin-left: -3.75rem;
+    padding: 3.75rem 0;
+    position: relative;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.secHead:before {
+    content: "<";
+}
+
+.secHead:after {
+    content: ">";
+}
+.secHead:before, .secHead:after {
+    display: inline-block;
+}
+
+.wrap {
+    min-height: 50rem;
+}
+
+.wrap li {
+    border: 2px solid #e9b171;
+}
+
+.wrap li ul {
+    color: white;
+}
+
+.wrap li ul a {
+    color: #e9b171;
+    transition: 0.5s ease;
+    height: 54px;
+    min-width: 205px;
+    font-size: 35px;
+    padding: 5px 24px;
+}
+
+.wrap li ul a:hover {
+    color: #c22085;
+}
+
+.wrap li ul a:hover {
+    color: #c22085;
+}
+
+.projectName {
+    font-weight: 400;
+    padding: 5px 24px;
+}
+
+.ProjectAbout {
+    font-weight: 300;
+    padding: 5px 24px;
+}
+
+.wrap li ul {
+    padding: 0;
+    width: 100%;
+    margin: 2rem 0;
+    vertical-align: top;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.375rem;
+    position: relative;
+}
+
+.quote1 {
+    min-height: 100vh;
+}
+
+.wrapProjects {
+    margin-top: -50px;
+}
+
+.end {
+    margin-top: -50px;
+}
+
+.quotePositiveLines {
+    fill: none;
+    stroke: #2d9687;
+}
+
+#quote2TextSVG {
+    stroke: #2d9687;
+    stroke-width: 15;
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke-dashoffset: 924;
+    stroke-dasharray: 924;
+    margin-top: -14rem;
+}
+
+#quote2TextSVG.show {
+    opacity: 1;
+    stroke-dashoffset: 1040;
+    stroke-dasharray: 1040;
+    fill: none;
+    stroke: #e9b171;
+    stroke-width: 15;
+    animation: sign 3.5s;
+    animation-fill-mode: forwards;
+}
+.quoteText {
+    fill: var(--pure);
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.qouteText {
+    margin-left: -50px;
+}
+
+.qouteText {
+    animation: moveText1 3s ease;
+}
+
+@keyframes moveText1 {
+    from {
+        margin-left: -100px;
+    }
+
+    to {
+        margin-left: -50px;
+    }
+}
+
+.quote2TextTop .show {
+    color: var(--pure);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 14rem;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: -25rem;
+    animation: moveText2 3s ease;
+}
+
+#SVGbottom1 {
+    color: var(--pure);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0rem;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 12rem;
+
+}
+
+#SVGtop1 {
+    color: var(--pure);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 12.5rem;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: -25rem;
+
+}
+
+.aboutHead {
+    color: #2d9687;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 130px;
+}
+
+.aboutHead:before {
+    content: "<";
+}
+
+.aboutHead:after {
+    content: ">";
+}
+
+.aboutWrap {
+    width: 50%;
+    width: 48rem;
+    max-width: 65%;
+    margin-left: 190px;
+}
+
+.halfB {
+    font-family: 'Roboto', sans;
+    color: #2d9687;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 30px;
+    font-size: 2rem;
+    line-height: 40px;
+    line-height: 2.5rem;
+    padding-bottom: 0.25em;
+}
+
+.halfY {
+    color: #e9b171;
+    font-family: 'Roboto', sans;
+    font-weight: 300;
+    font-style: italic;
+
+    font-size: 1.65rem;
+    line-height: 40px;
+    line-height: 2.5rem;
+    padding-bottom: 0.25em;
+    margin: 0 0 -0.25rem;
+}
+
+.aboutSVG {
+    position: absolute;
+    right: 5%;
+    top: 150em;
+    width: 35%;
+    overflow: visible;
+}
+
+#aboutWindow {
+    fill: none;
+    stroke: #e9b171;
+    stroke-width: 15;
+    
+}
+
+@media all and (max-width: 1320px) {
+    .aboutSVG {
+        position: absolute;
+        right: 5%;
+        top: 150em;
+        width: 30%;
+        overflow: visible;
+    }
+
+    .aboutWrap {
+        width: 50%;
+        width: 40rem;
+        max-width: 65%;
+        margin-left: 190px;
+    }
+}
+
+@media all and (max-width: 1504px) {
+    .aboutSVG {
+        position: absolute;
+        right: 5%;
+        top: 150em;
+        width: 30%;
+        overflow: visible;
+    }
+}
+
+@media all and (max-width: 1120px) {
+    .aboutSVG {
+        position: absolute;
+        right: 5%;
+        top: 160em;
+        width: 30%;
+        overflow: visible;
+    }
+
+    .aboutWrap {
+        width: 50%;
+        width: 34rem;
+        max-width: 65%;
+        margin-left: 190px;
+    }
+}
+
+@media all and (max-width: 1020px) {
+    .aboutSVG {
+        position: absolute;
+        right: 5%;
+        top: 160em;
+        width: 35%;
+        overflow: visible;
+    }
+
+    .aboutWrap {
+        width: 50%;
+        width: 30rem;
+        max-width: 65%;
+        margin-left: 190px;
+    }
+}
+
+@media all and (max-width: 925px) {
+    .aboutSVG {
+        position: absolute;
+        right: 5%;
+        top: 170em;
+        width: 40%;
+        overflow: visible;
+    }
+
+    .aboutWrap {
+        width: 50%;
+        width: 20rem;
+        max-width: 65%;
+        margin-left: 190px;
+    }
+}
